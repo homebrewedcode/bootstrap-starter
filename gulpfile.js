@@ -1,5 +1,5 @@
 //based on https://css-tricks.com/gulp-for-beginners/
-
+const{ series } = require('gulp');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
@@ -13,7 +13,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 
 //place npm js dependencies into js folder, update sources as more may be added.
-gulp.task('modules:js', function() {
+gulp.task("modules:js", function() {
     //list of js node module dependencies.  Bootstrap requires jquery and popper.js
     var sources = [
         './node_modules/jquery/dist/jquery.js',
@@ -117,6 +117,4 @@ gulp.task('default', function(callback) {
        callback
    );
 });
-
-
 
