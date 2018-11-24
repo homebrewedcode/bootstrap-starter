@@ -1,0 +1,11 @@
+//offset navbar drobdown to left to fight in screen on left justified navbar
+#mainNavbar .dropdown-menu {
+  margin: 0.125rem -6rem 0;
+}
+
+@media (max-width: 767.98px) {
+  //reset the dropdown to fit normally when not expanded
+  #mainNavbar .dropdown-menu {
+    margin: 0.125rem 0 0;
+  }
+}

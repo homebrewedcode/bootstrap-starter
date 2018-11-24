@@ -1,0 +1,6 @@
+#mainNavbar .dropdown-menu {
+  margin: 0.125rem -6rem 0; }
+
+@media (max-width: 767.98px) {
+  #mainNavbar .dropdown-menu {
+    margin: 0.125rem 0 0; } }

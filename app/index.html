@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP TITLE</title>
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/custom_bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!--endbuild-->
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-md-5">
+
+        <a class="navbar-brand" href="#">Bootsrap Starter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <main role="main" class="container-fluid bg-info text-white py-5">
+
+        <div class="text-center">
+            <h1 class="display-1">BOOTSTRAP STARTER</h1>
+            <p class="lead">This is my basic starting point for Bootstrap 4 enabled sites.  I use NPM for all dependencies and Gulp for a build tool.</p>
+        </div>
+
+    </main><!-- /.container -->
+
+    <article class="container">
+        <h2 class="display-4 text-center mt-3">Setup</h2>
+        <p>First off, you will need NPM installed on your system.  This set of steps should bet you up to speed:</p>
+        <ul>
+            <li>Clone this repository onto your system</li>
+            <li>Run <code>npm install</code></li>
+            <li>
+                Now you should be ready to use this boilerplate code as the bootstrap styles are
+                imported into <code>custom_bootstrap.scss</code> and .js dependencies have already been populated
+            </li>
+            <li>Custom css should be written into <code>app/scss/custom.scss</code></li>
+            <li>Custom javascript should be placed in <code>app/js/app.js</code></li>
+            <li>Start building the homepage in <code>app/index.html</code> and place any new desired .html files in the <code>app</code> directory</li>
+        </ul>
+    </article>
+
+    <article class="container">
+        <h2 class="display-4 text-center mt-3">Development</h2>
+        <p>During development, the basic workflow should go as follows:</p>
+        <ul>
+            <li>Run the default gulp command with <code>gulp</code> to start the the browserSync server</li>
+            <li>A new browser tab will open in your default browser</li>
+            <li>Whenever a file is saved, the browser will be refreshed automatically</li>
+            <li>If dependencies are updated, you can run <code>gulp build:dev</code> which will clean out and repopulate the bootstrap js dependencies from <code>node_modules</code></li>
+            <li>Any new js dependencies will need to manually be added to the gulp tasks and added to the html files between the comments for css or js files</li>
+        </ul>
+    </article>
+
+    <article class="container">
+        <h2 class="display-4 text-center mt-3">Final Build</h2>
+        <p>Once you are ready to build your app for production, follow these steps:</p>
+        <ul>
+            <li>Run <code>gulp build</code> to populate the <code>dist</code> folder with your files</li>
+            <li>
+                All scss will be compiled and css and js files will be minified into one css and js file.
+                Images and fonts will also be optimized and copied over to <code>dist</code> in their respective folders
+            </li>
+         </ul>
+    </article>
+
+    <footer class="container-fluid bg-dark text-white mt-5 py-4 px-5">
+        <div class="row d-flex justify-content-between">
+            <h3 class="mb-0">New Site</h3>
+       </div>
+    </footer>
+
+
+
+<!--build:js js/main.min.js -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
